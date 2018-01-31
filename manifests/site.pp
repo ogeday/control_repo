@@ -5,7 +5,7 @@ node 'master.puppet.vm' {
   file { '/root/README':
     ensure => file,
     mode => '0644',
-    content => $fqdn,
+    content => "This is server : ${fqdn}\n",
   }
 }
 node /^web/ {
