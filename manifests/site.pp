@@ -2,11 +2,6 @@ node default {
 }
 node 'master.puppet.vm' {
   include role::master_server
-  file { '/root/README':
-    ensure => file,
-    mode => '0644',
-    content => "This is server : ${fqdn}\n",
-  }
 }
 node 'minecraft.puppet.vm' {
   include role::minecraft_server
