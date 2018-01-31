@@ -2,5 +2,8 @@
 #
 class profile::minecraft {
   # resources
-  include minecraft
+  class {'minecraft':
+    install_dir => '/srv/minecraft'
+  }
+  #include minecraft
 }
