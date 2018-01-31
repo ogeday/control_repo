@@ -5,17 +5,17 @@ class profile::hosts {
   host { 'web':
     ensure => 'present',
     name => 'web.puppet.vm',
-    ip => '172.18.0.3',
+    ip => '172.18.0.2',
   }
   host { 'db':
     ensure => 'present',
     name => 'db.puppet.vm',
-    ip => '172.18.0.2',
+    ip => '172.18.0.3',
   }
   host { 'minecraft':
     ensure => 'present',
     name => 'minecraft.puppet.vm',
-    ip => '172.18.0.5',
+    ip => '172.18.0.4',
   }
   host { 'master':
     ensure => 'present',
