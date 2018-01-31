@@ -2,6 +2,11 @@ node default {
 }
 node 'master.puppet.vm' {
   include role::master_server
+  file { '/root/README':
+    ensure => file,
+    mode => '0644',
+    content => $fqdn,
+  }
 }
 node /^web/ {
   include role::app_server
