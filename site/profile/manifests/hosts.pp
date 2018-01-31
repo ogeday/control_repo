@@ -12,10 +12,10 @@ class profile::hosts {
     name => 'db.puppet.vm',
     ip => '172.18.0.2',
   }
-  host { 'minetest':
+  host { 'minecraft':
     ensure => 'present',
-    name => 'minetest.puppet.vm',
-    ip => '172.18.0.4',
+    name => 'minecraft.puppet.vm',
+    ip => '172.18.0.5',
   }
   host { 'master':
     ensure => 'present',
