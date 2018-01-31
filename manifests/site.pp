@@ -8,8 +8,8 @@ node 'master.puppet.vm' {
     content => "This is server : ${fqdn}\n",
   }
 }
-node 'minetest.puppet.vm' {
-  include role::minetest_server
+node 'minecraft.puppet.vm' {
+  include role::minecraft_server
 }
 node /^web/ {
   include role::app_server
